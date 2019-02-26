@@ -180,9 +180,15 @@ Next we need to determining the homogeneous rotaion matrix from link_3 to grippe
      theta4 = atan2(R3_6[2,2], -R3_6[0,2]) 
      theta6 = atan2(-R3_6[1,1],R3_6[1,0])
 ```
+### Pictures of successful pick and place operation  
+
+<p align="center"> <img src="./misc_images/A1.png"> </p>
+<p align="center"> <img src="./misc_images/A2.png"> </p>
+<p align="center"> <img src="./misc_images/A3.png"> </p>
+<p align="center"> <img src="./misc_images/A4.png"> </p>
 
 ### Note
-If errors occure when launching program try.
+If errors occur when launching program try.
 ```
 export GAZEBO_MODEL_PATH=~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/models
 
