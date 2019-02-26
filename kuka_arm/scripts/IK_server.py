@@ -70,8 +70,9 @@ def handle_calculate_IK(req):
 	T0_EE = (T0_1 * T1_2 * T2_3 * T3_4 * T4_5 * T5_6 * T6_EE)
 	
 	# Extract rotation matrices from the transformation matrices
+	# moved following procedures out of for loop since it doesn't need to be iterated more then once
 	#
-	#
+	# Z rotation in 180 degrees, Y rotation -90 degrees
 	rz = Matrix([[-1, 0,0, 0],[0, -1, 0, 0],[0, 0, 1, 0], [0, 0, 0, 1]])
 	ry = Matrix([[0, 0, -1, 0],[0, 1, 0, 0],[1, 0, 0, 0], [0, 0, 0, 1]])
 	R_corr = rz*ry
@@ -145,7 +146,7 @@ def handle_calculate_IK(req):
 
 	    theta5 = atan2(sqrt(R3_6[0,2]*R3_6[0,2] + R3_6[2,2]*R3_6[2,2]),R3_6[1,2])
 	    
-            #select best solution from theta5 value
+            # error every now and then regarding if statement
             if (theta5 > pi) :
                 theta4 = atan2(-R3_6[2,2], R3_6[0,2]) 
                 theta6 = atan2(R3_6[1,1],-R3_6[1,0]) 
