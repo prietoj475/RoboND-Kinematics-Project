@@ -6,6 +6,10 @@
 ---
 ### Forward Kinematic Analysis
 
+Annotated figure of Kuka KR210 with proper link assignments and joint rotations
+
+<p align="center"> <img src="./misc_images/FK_1.jpg"> </p>
+
 ### Kuka KR210 robot DH parameters.
 
 ```python
@@ -24,7 +28,7 @@ DH_Table = {alpha0:      0, a0:      0, d1:  0.75, q1:        q1,
 
 We can determine the transformion matrices from one link refrence frame to another using the following formula:
 
-<p align="center"> <img src="./wu_images/tf_1.png"> </p>
+<p align="center"> <img src="./misc_images/tf_1.png"> </p>
 
 ```python
 # Homogeneous transform matrix function
