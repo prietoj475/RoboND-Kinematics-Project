@@ -1,6 +1,7 @@
 [![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 # Robotic Arm Pick & Place Project
 ---
+<p align="center"> <img src="./misc_images/misc4.png"> </p>
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/972/view) Points
 ---
