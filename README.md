@@ -1,8 +1,6 @@
 [![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 # Robotic Arm Pick & Place Project
-
-## [Rubric](https://review.udacity.com/#!/rubrics/972/view) Points
----
+----
 ## Setting up the environment:
 
 ### initial install:
@@ -113,8 +111,8 @@ export GAZEBO_MODEL_PATH=~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/mode
 
 source ~/catkin_ws/devel/setup.bash
 ```
-
-
+## [Rubric](https://review.udacity.com/#!/rubrics/972/view) Points
+---
 ### Forward Kinematic Analysis
 
 ### Kuka KR210 robot DH parameters.
