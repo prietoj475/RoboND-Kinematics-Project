@@ -21,6 +21,11 @@ DH_Table = {alpha0:      0, a0:      0, d1:  0.75, q1:        q1,
 
 ### Creating the individual transformation matrices about each joint:
 
+
+We can determine the transformion matrices from one link refrence frame to another using the following formula:
+
+<p align="center"> <img src="./wu_images/tf_1.png"> </p>
+
 ```python
 # Homogeneous transform matrix function
 
@@ -44,7 +49,7 @@ T5_6 = TF_Mat(alpha5, a5, d6, q6).subs(DH_table)
 T6_EE = TF_Mat(alpha6, a6, d7, q7).subs(DH_table)
 
 ```
-rotation correction URDF versus DH Convention: 180 degree rotation on the Z axis, and -90 degree on the y axis
+URDF v DH Convention rotation correction: 180 degree rotation on the Z axis, and -90 degree on the y axis
 
 ```python
 rz = Matrix([[-1, 0,0, 0],
