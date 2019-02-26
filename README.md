@@ -94,7 +94,7 @@ Collect the end-effector position(**Px, Py, Pz**) and orientation (**Roll, Pitch
          req.poses[x].orientation.w])
 ```
 
-We substitute the obtained roll, pitch and yaw in the final rotation matrix.
+We substitute the obtained **Roll, Pitch, Yaw** in the final rotation matrix.
 
 ```python
  # determine EE rotation matrix RPY (Roll, Pitch, Yaw)
@@ -123,7 +123,7 @@ We substitute the obtained roll, pitch and yaw in the final rotation matrix.
     # End effector final rotation matrix
     Rot_EE = ROT_EE.subs({'r': roll, 'p': pitch, 'y': yaw})
 ```
-we begin the steps to calculate **𝜃1, 𝜃2 and 𝜃3**
+begin procedure to calculate **𝜃1, 𝜃2 and 𝜃3**
 
 ```python
     # n-vectors from EE rotation matrix
